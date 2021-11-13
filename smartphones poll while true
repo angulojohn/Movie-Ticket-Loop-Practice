@@ -1,0 +1,13 @@
+smartphones = {}
+
+current = True
+while current:
+    name = input("What is your name?")
+    question = input("What smartphone do you use?")
+    smartphones[name] = question
+
+    prompt = input("Do you want someone else to participate in this poll? Enter 'y' for yes. Enter 'n' for no.")
+    if prompt == 'n':
+        current = False
+for name, smartphone in smartphones.items():
+    print(f"{name.title()} uses a {smartphone}.")
