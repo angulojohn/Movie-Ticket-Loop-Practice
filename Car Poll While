@@ -1,0 +1,12 @@
+car_makes = {}
+polling_active = True
+while polling_active:
+    name = input("What is your name?")
+    make = input("What car make do you drive? For example: Toyota, BMW, Ford, etc.")
+    car_makes[name] = make
+    repeat = input("Would you like to ask this question to someone else? Type 'y' for yes. Type 'n' for no.")
+    if repeat == 'n':
+        polling_active = False
+print("---Poll Results---")
+for name, make in car_makes.items():
+    print(f"{name.title()} drives a {make.title()}.")
