@@ -1,0 +1,26 @@
+Powerlifting_Totals = {
+    'John': {
+        'Squat': '275',
+        'Bench': '235',
+        'Deadlift': '405',
+        'OHP': '135'
+    },
+    'Viktor': {
+        'Squat': '115',
+        'Bench': '95',
+        'Deadlift': '185',
+        'OHP': 'N/A'
+    },
+    'Jose': {
+        'Squat': '225',
+        'Bench': '135',
+        'Deadlift': '225',
+        'OHP': '95'
+    }
+}
+
+for name, lift_info in Powerlifting_Totals.items():
+    print(f"Here is: {name}.")
+    lift = f"{lift_info['Squat']} {lift_info['Bench']} {lift_info['Deadlift']} {lift_info['OHP']}"
+
+    print(f"\t{name} lifts for squat, bench, deadlift, and overhead press, respectively,: {lift}")
