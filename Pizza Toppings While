@@ -1,0 +1,11 @@
+intro = "Welcome to Papa Johns. What toppings would you like?"
+intro += ("\nType 'thats it' when you are finished.")
+everything = []
+while True:
+    toppings = input(intro)
+    if toppings == 'thats it':
+        break
+    else:
+        everything.append(toppings)
+        print(f"Adding {toppings}.")
+print(f"You ordered a pizza with {everything} on it.")
